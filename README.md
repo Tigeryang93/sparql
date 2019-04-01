@@ -12,9 +12,7 @@ SPARQL查询语言旨在满足RDF Data Access Working Group在 RDF Data Access U
 除非在标题中另有说明，否则本文中的所有章节和附录均为规范性的。
 
 第1章介绍SPARQL查询语言规范。介绍文档的组织以及整个文档中使用的约定。
-
 第2章通过一系列示例查询和查询结果介绍SPARQL查询语言。第3章继续介绍SPARQL查询语言，其中包含更多示例，这些示例演示SPARQL能够表达对查询结果中出现的RDF项的约束。
-
 第4章介绍SPARQL查询语言的语法细节。定义用于表示IRIs，空白节点，文字和变量的语法结构。除此之外，还定义几个语法结构，这些结构作为更详细表达式的语法糖。
 
 第5章介绍基本图模式和组图模式，用于构建更为复杂的SPARQL查询模式。第6,7和8章介绍将SPARQL图形模式组合成更大图形模式的结构。特别是，第6章介绍使查询的某些部分可选的功能;第7章介绍表达替代图模式分离的能力;第8章介绍测试信息缺失的模式。
@@ -562,12 +560,10 @@ PREFIX  dc: <http://purl.org/dc/elements/1.1/>
 SELECT  ?title
 WHERE   { <http://example.org/book/book1> dc:title ?title }
 
-  
 PREFIX  dc: <http://purl.org/dc/elements/1.1/>
 PREFIX  : <http://example.org/book/>
 SELECT  $title
 WHERE   { :book1  dc:title  $title }
-
 
 BASE    <http://example.org/book/>
 PREFIX  dc: <http://purl.org/dc/elements/1.1/>
